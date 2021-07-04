@@ -7,6 +7,8 @@ This chatbot was built using IBM Watson Assistant, It aims to learn about Smart 
 
 have
 
+https://user-images.githubusercontent.com/71742682/124396951-a0d45180-dcc1-11eb-804f-b26f602dc6b2.mp4
+
 Intents (5)
 
 Dialog (5)
