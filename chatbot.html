@@ -1,0 +1,47 @@
+<html> 
+<head> 
+ <style> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+body {background-color: lightyellow;}  
+button { 
+background:white; 
+border: 1px solid #000; 
+border-radius: 8px; 
+position: center; } 
+</style>
+</head> 
+<body> 
+<div style='text-align:center'>
+<form action="a.php" method="POST">
+<br /> 
+<br /> 
+<span style='display:inline-block;padding:5px;border:1px solid #fc0; font-size: 140%;font-weight: bold;'> 
+<br /> 
+<button style='height: 75px; width: 75px' name="forward" ><img style='height: 65px' src='forward.png'></button> 
+<br />
+<br /> 
+<button style='height: 75px; width: 75px' name="left" ><img style='height: 65px' src='left.png'></button> 
+<button style='height: 75px; width: 75px' name="stop" ><img style='height: 63px' src='stop.png'></button> 
+<button style='height: 75px; width: 75px' name="right" ><img style='height: 65px' src='right.png'></button> 
+<br />
+<br />
+<button style='height: 75px; width: 75px' name="backward" ><img style='height: 65px' src='reverse.png'></button> 
+<br />
+<br />
+</span> 
+</div>
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "85a6de00-d2f8-4ee4-a6fd-0b3c20a3828e", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "d2d173f0-b5d4-4431-a25e-2bc3f4eddbeb", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script> 
+</body> 
+</html> 
